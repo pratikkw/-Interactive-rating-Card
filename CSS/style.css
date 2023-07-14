@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-clr: hsl(25, 97%, 53%);
+
+  --light-grey: hsl(217, 12%, 63%);
+  --medius-grey: hsl(216, 12%, 54%);
+
+  --point-clr: hsl(213, 19%, 18%);
+  --card-bk-clr: hsl(215, 25%, 13%);
+  --main-bk-clr: hsl(216, 12%, 8%);
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  background-color: var(--brand-clr);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  background-color: var(--main-bk-clr);
+}
+
+.mg-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.mg-bottom-medium {
+  margin-bottom: 1.75rem;
+}
+
+.hidden {
+  display: none;
+}
+/* ------------------- */
+
+.main {
+  max-width: 25rem;
+  background-color: var(--card-bk-clr);
+  margin: 5rem 1.5rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1.75rem;
+}
+
+.logo {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--point-clr);
+}
+
+.primary-heading {
+  font-weight: 700;
+}
+
+.para {
+  color: var(--light-grey);
+  line-height: 1.4;
+  font-size: calc(15rem / 16);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-grey);
+  background-color: var(--point-clr);
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.75em 1.5em;
+  width: 100%;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--brand-clr);
+}
+
+.result__container {
+  text-align: center;
+}
+
+.review__point {
+  display: inline-block;
+  padding: 5px 1rem;
+  border-radius: 100px;
+  background-color: hsl(210, 19%, 18%);
+  color: var(--brand-clr);
+}
+
+.info-2 > h2 {
+  margin-bottom: 0.75rem;
+}
+
+.notice {
+  display: none;
+  margin-top: 0.75rem;
+  text-align: center;
+  color: red;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 31.25rem) {
+  .main {
+    padding: 2rem;
+  }
+
+  .item {
+    width: 3rem;
+  }
+}
